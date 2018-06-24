@@ -1,0 +1,350 @@
+@font-face {
+    font-family: "AGaramondProItalic";
+    src: url("../fonts/adobe-garamond/Garamond-Italic.ttf");
+  }
+  body {
+    margin: 0px;
+  }
+  #site {
+    font-family: "helveticaNeue";
+    font-size: 18px;
+  }
+  .max-width-wrapper {
+    max-width: 1392px;
+    margin: 0px auto;
+  }
+  .content-wrapper {
+    margin: 0px 169px;
+  }
+  .content-section {
+    margin: 0px -169px;
+    padding-left: 169px;
+    padding-right: 169px;
+  }
+  h1 {
+    font-size: 60px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: HelveticaNeue;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-family: "AGaramondProItalic";
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  h3 {
+    font-size: 34px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: HelveticaNeue;
+    text-transform: uppercase;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  p {
+    font-style: HelveticaNeue;
+    font-weight: lighter;
+  }
+  input {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 50px;
+  }
+  .video-rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .video-rows .video-small-with-caption {
+    width: calc(100%/6);
+    margin-bottom: 3em;
+    margin-top: 1em;
+  }
+  .video-rows .video-small-with-caption .small-video-thumb {
+    background: linear-gradient(to bottom right, #19b5fe, #36d7b7);
+    /* Standard syntax */
+    height: 150px;
+  }
+  .video-rows .video-large-with-caption .large-video-thumb {
+    position: relative;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video-rows .video-large-with-caption .large-video-thumb .play-icon {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .video-rows .video-large-with-caption .large-video-thumb .play-icon .css-play {
+    margin-left: 33px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 22.5px solid white;
+    transition: 0.5s ease-in-out;
+  }
+  .video-rows .video-large-with-caption .large-video-thumb .play-icon .play-text {
+    transition: 0.25s ease-in-out;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: "AGaramondProItalic";
+    opacity: 0;
+    color: white;
+    margin-left: 20px;
+  }
+  .video-rows .video-large-with-caption:hover .play-icon {
+    width: 140px;
+  }
+  .video-rows .video-large-with-caption:hover .play-icon .css-play {
+    margin-left: 30px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid white;
+  }
+  .video-rows .video-large-with-caption:hover .play-icon .play-text {
+    opacity: 1;
+    transition: 0.6s ease-in-out;
+  }
+  .video-thumb-caption {
+    font-size: 16px;
+    padding: 1em;
+  }
+  .video-thumb-caption span {
+    font-weight: bold;
+  }
+  .btn {
+    border-radius: 50px;
+    padding: 1.25em 3.5em;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 1em;
+    color: #888;
+    font-size: 16px;
+    max-width: 1892px;
+  }
+  .header .action-button-row {
+    display: flex;
+    align-items: center;
+  }
+  .header .action-button-row .btn {
+    background-color: #888;
+    color: white;
+    padding: 1em 2em;
+    text-transform: none;
+  }
+  .header .action-button-row .action-button {
+    margin: 0px 1em;
+    font-weight: lighter;
+  }
+  .header .contact-and-account {
+    display: flex;
+  }
+  .header .contact-and-account .contact, .header .contact-and-account .account {
+    margin: 0px 1em;
+  }
+  .stage {
+    padding-top: 10em;
+    padding-bottom: 10em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+  }
+  .stage .stage-hero-text {
+    max-width: 50%;
+  }
+  .stage .stage-hero-text .todays-lesson-desc {
+    margin-top: 1em;
+  }
+  .stage .stage-hero-text .start-lesson-btn {
+    background-color: #eee;
+    margin-top: 4em;
+    color: black;
+    text-transform: none;
+  }
+  .subscribe-and-download {
+    width: 100%;
+    display: flex;
+  }
+  .subscribe-and-download .subscribe {
+    display: flex;
+    align-items: flex-end;
+    background: black;
+    color: white;
+    width: 75%;
+    padding-left: 169px;
+    margin-left: -169px;
+    padding-top: 7em;
+    padding-bottom: 7em;
+  }
+  .subscribe-and-download .subscribe input {
+    color: white;
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin-top: 1em;
+    transition: 0.5s ease-in-out;
+  }
+  .subscribe-and-download .subscribe input:focus {
+    width: 95%;
+  }
+  .subscribe-and-download .subscribe .left-float {
+    width: 66.66%;
+    padding-right: 4em;
+  }
+  .subscribe-and-download .subscribe .left-float p {
+    max-width: 550px;
+  }
+  .subscribe-and-download .subscribe .right-float {
+    width: 70%;
+  }
+  .subscribe-and-download .subscribe .right-float .btn {
+    margin-right: 10px;
+  }
+  .subscribe-and-download .subscribe .right-float a {
+    text-decoration: underline;
+    margin-left: 10px;
+  }
+  .subscribe-and-download .subscribe .subscribe-btn {
+    border: 1px solid white;
+  }
+  .subscribe-and-download .download-app {
+    width: 25%;
+    padding: 89px;
+    background: url("../img/img_banner.jpg");
+    background-size: cover;
+    padding-right: 169px;
+    margin-right: -169px;
+    margin-bottom: -3em;
+    color: white;
+  }
+  .subscribe-and-download .download-app .btn {
+    border: 1px solid white;
+    margin-top: 3em;
+  }
+  .more-lessons {
+    margin-top: 5em;
+    margin-bottom: 9em;
+  }
+  .more-lessons .more-lessons-header {
+    margin-top: 3em;
+  }
+  .more-lessons input {
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin-top: 2em;
+  }
+  .more-lessons-videos {
+    display: flex;
+    flex-direction: column;
+    margin-left: -169px;
+    margin-right: -169px;
+    width: calc(100% + 338px);
+  }
+  .more-lessons-videos .large :first-child .large-video-thumb {
+    background-image: url("../img/img1.jpg");
+  }
+  .more-lessons-videos .large :nth-child(2) .large-video-thumb {
+    background-image: url("../img/img2_big.jpg");
+  }
+  .more-lessons-videos .large :nth-child(3) .large-video-thumb {
+    background-image: url("../img/img3.jpg");
+  }
+  .more-lessons-videos .large :nth-child(4) .large-video-thumb {
+    background-image: url("../img/img4.jpg");
+  }
+  .more-lessons-videos .large-video-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .more-lessons-videos .video-large-with-caption {
+    width: 25%;
+    transition: 0.5s ease-in-out;
+  }
+  .more-lessons-videos .video-large-with-caption:hover {
+    transform: scale(1.05);
+  }
+  .more-lessons-videos .video-large-with-caption .video-thumb-caption {
+    padding: 50px;
+  }
+  .more-lessons-videos .see-all-row {
+    width: 100%;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 7em;
+  }
+  .more-lessons-videos .see-all-row .see-all {
+    border-bottom: 3px solid black;
+  }
+  .topics-to-choose {
+    width: 100%;
+    background: black;
+    position: relative;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  .topics-to-choose .topics-to-choose-header {
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topics-to-choose .video-thumb-caption {
+    color: white;
+  }
+  .topics-to-choose .topics-to-choose-more-topics {
+    position: absolute;
+    right: 0px;
+    bottom: -90px;
+    color: white;
+    background-color: black;
+    padding: 2em 1em;
+    width: 33.33%;
+  }
+  .recommended-for-you {
+    width: 100%;
+    margin-top: 12em;
+    margin-bottom: 10em;
+  }
+  .recommended-for-you .recommended-for-you-header {
+    color: black;
+  }
+  .footer {
+    width: 100%;
+    height: 1000px;
+    background-image: url("../img/footer.png");
+    background-size: contain;
+    background-position: top;
+  }
+  
